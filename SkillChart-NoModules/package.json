@@ -1,0 +1,17 @@
+{
+  "name": "Skills-Chart",
+  "version": "1.0.0",
+  "description": "Your Figma widget",
+  "main": "code.js",
+  "scripts": {
+    "build": "esbuild code.tsx --bundle --outfile=code.js"
+  },
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "@figma/plugin-typings": "*",
+    "@figma/widget-typings": "^1.4.0",
+    "esbuild": "^0.14.43",
+    "typescript": "*"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Skills Chart",
+  "id": "1207836110040407856",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": [
+    "figjam"
+  ],
+  "containsWidget": true,
+  "widgetApi": "1.0.0"
+}
