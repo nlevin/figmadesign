@@ -39,6 +39,15 @@ npm run build
 
 Import `SkillChart/manifest.json` through Figma's development-widget workflow to test the local build in FigJam.
 
+### Manifest ID and forks
+
+The checked-in manifest ID, `1207836110040407856`, belongs to the published Skills Chart widget linked above.
+
+- If you are contributing directly to this widget, keep the existing ID.
+- If you are forking the project or publishing your own version, create a new development widget in Figma and replace the manifest's `id` with the new ID Figma generates for you.
+
+Do not publish a separate widget using the checked-in ID; it is uniquely associated with the existing Figma Community listing.
+
 When changing framework copy, edit `levelinfo.tsx`. To refresh the standalone compiled description file as well as the widget bundle, run:
 
 ```sh
