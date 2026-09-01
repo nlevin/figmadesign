@@ -1,6 +1,11 @@
 # Figma Design Career Framework
 
-This repository contains Figma's design career-ladder reference materials and the source for the **Skills Chart** FigJam widget. The widget turns the framework into an interactive chart that people can use for career conversations, self-assessment, and development planning.
+This repository contains Figma's current design career frameworks and the source for the **Skills Chart** FigJam widget. The widget turns the framework into an interactive chart that people can use for career conversations, self-assessment, and development planning.
+
+The readable web version includes both career tracks:
+
+- **[Individual contributor framework](https://product-design-ladder-ictrack.vercel.app/)** — Design and Writing, L1–L6
+- **[Manager framework](https://product-design-ladder-ictrack.vercel.app/manager-levels.html)** — Design and Writing management, M3–E2 (E2 criteria are currently TBD)
 
 ## Use the published widget
 
@@ -18,8 +23,9 @@ Each skill includes level-specific criteria in its tooltip. Skill levels and the
 
 ## Repository structure
 
-- `Index.html` — static entry point for the original Product Design Ladder export
-- `Product Design Ladder…/` — static level and skills-chart reference pages
+- `index.html` — current Individual Contributor career framework
+- `manager-levels.html` — current Manager career framework
+- `styles.css` — shared framework layout and responsive styling
 - `SkillChart/` — FigJam widget source and publishing files
   - `code.tsx` — widget layout, role switching, selection behavior, and styling
   - `levelinfo.tsx` — Design, Writing, and Manager level descriptions
