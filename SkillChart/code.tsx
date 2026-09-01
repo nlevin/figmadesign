@@ -13,11 +13,11 @@ const {
 import { levelDescriptions } from './levelinfo';
 
 
-const LEVEL_COUNT = 6;
+const INDIVIDUAL_LEVEL_COUNT = 6;
+const MANAGEMENT_LEVEL_COUNT = 5;
 const LEVEL_HEIGHT = 130;
-const CHART_HEIGHT = LEVEL_COUNT * LEVEL_HEIGHT;
-const SKILL_FRAME_HEIGHT = CHART_HEIGHT + 66;
-const WIDGET_HEIGHT = 1100 + LEVEL_HEIGHT;
+const SKILL_FRAME_OVERHEAD = 66;
+const WIDGET_VERTICAL_OVERHEAD = 450;
 const DASHED_LINE_SVG = `<svg width="3481" height="4" viewBox="0 0 3481 4" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M0 2H3481" stroke="black" stroke-width="3" stroke-dasharray="8 8" />
 </svg>`;
@@ -30,7 +30,14 @@ type Category = {
   color: string;
   skills: string[];
   skillDescriptions: string[];
+  descriptionKeys?: string[];
+  stateKey?: string;
 };
+
+type Role = "Design" | "Writing" | "Managers";
+
+// E2 descriptions remain in levelinfo.tsx, ready to re-enable once the criteria are complete.
+const MANAGER_LEVEL_LABELS = ["M3", "M4", "M5", "M6", "E1"];
 
 const strategyCategory = {
   name: "Strategy",
@@ -63,14 +70,68 @@ const impactCategory = {
   skillDescriptions: ["Output, follow-through, and business impact", "Mentorship, ability to influence and drive change", "Improving our culture, hiring, and company practices"],
 };
 
-const categories = [strategyCategory, craftCategory, writingCraftCategory, collabCategory, impactCategory];
+const managerStrategyCategory = {
+  name: "Strategy",
+  stateKey: "Strategy & Results",
+  color: "#9747FF",
+  skills: ["Influence", "Results"],
+  descriptionKeys: ["Influence & Decision Making", "Achieve Business Results"],
+  skillDescriptions: ["Making decisions with intention", "The results of your work on the business"],
+};
+const managerCollaborationCategory = {
+  name: "Collaboration",
+  stateKey: "Collaboration & Communication",
+  color: "#14AE5C",
+  skills: ["Collaboration", "Communication"],
+  skillDescriptions: ["How you work with others and affect change", "How and what you share with others"],
+};
+const managerPeopleCategory = {
+  name: "Management",
+  stateKey: "People & Team Management",
+  color: "#F24822",
+  skills: ["Talent", "Culture", "Coaching"],
+  skillDescriptions: ["Building your team", "How your team operates", "Behaviors and practices"],
+};
+const managerCraftCategory = {
+  name: "Craft",
+  color: "#0D99FF",
+  skills: ["Design Quality", "Systems", "Vision"],
+  descriptionKeys: ["Design Quality", "Systems & Process", "Strategy & Vision"],
+  skillDescriptions: [
+    "Guide quality through feedback, taste, direction, and hands-on craft.",
+    "Create, evolve, and scale processes that enable great design outcomes.",
+    "Define the right problems, turn ambiguity into clarity, and shape product vision.",
+  ],
+};
+
+const roleCategories: Record<Role, Category[]> = {
+  Design: [strategyCategory, craftCategory, collabCategory, impactCategory],
+  Writing: [strategyCategory, writingCraftCategory, collabCategory, impactCategory],
+  Managers: [managerStrategyCategory, managerCraftCategory, managerCollaborationCategory, managerPeopleCategory],
+};
+
+function getLevelLabel(role: Role, level: number) {
+  return role === "Managers" ? MANAGER_LEVEL_LABELS[level - 1] : `L${level}`;
+}
 
 function Widget() {
   const voteMap = useSyncedMap<number>("skill-level")
   const [userLevel, setUserLevel] = useSyncedState<number>('level', 1)
   const [showLevels, setShowLevels] = useSyncedState<boolean>("isShown", false)
-  const [role, setRole] = useSyncedState<string>("role", "Design")
-  const roleOptions = [{option: "Design", label: "Design"}, {option: "Writing", label: "Writing"}]
+  const [role, setRole] = useSyncedState<Role>("role", "Design")
+  const roleOptions = [
+    {option: "Design", label: "Design"},
+    {option: "Writing", label: "Writing"},
+    {option: "Managers", label: "Manager"},
+  ]
+  const categories = roleCategories[role]
+  const widgetWidth = role === "Writing" ? 3990 : role === "Managers" ? 3190 : 3750
+  const dividerWidth = role === "Writing" ? 3806 : role === "Managers" ? 2990 : 3550
+  const levelCount = role === "Managers" ? MANAGEMENT_LEVEL_COUNT : INDIVIDUAL_LEVEL_COUNT
+  const chartHeight = levelCount * LEVEL_HEIGHT
+  const skillFrameHeight = chartHeight + SKILL_FRAME_OVERHEAD
+  const widgetHeight = chartHeight + WIDGET_VERTICAL_OVERHEAD
+  const visibleUserLevel = Math.min(userLevel, levelCount)
 
   usePropertyMenu(
     [
@@ -92,7 +153,7 @@ function Widget() {
     ],
     ({propertyName, propertyValue}) => {
       if (propertyName === "roles") {
-        setRole(propertyValue)
+        setRole(propertyValue as Role)
       } else if (propertyName == "levelToggle") {
         setShowLevels(!showLevels);
       }
@@ -101,8 +162,8 @@ function Widget() {
   return (
     <Frame
       name="Everything"
-      width= { role == "Writing" ? 3990 : 3750 }
-      height={WIDGET_HEIGHT}
+      width={widgetWidth}
+      height={widgetHeight}
       fill="#FFFFFF"
       cornerRadius={10}
       effect={[
@@ -158,20 +219,20 @@ function Widget() {
         name="Dividers"
         x={82}
         y={228}
-        width={role == "Writing" ? 3806 : 3550}
-        height={CHART_HEIGHT}
+        width={dividerWidth}
+        height={chartHeight}
       >
-        {Array.from({ length: LEVEL_COUNT }, (_, index) => index + 1).map((level) => (
+        {Array.from({ length: levelCount }, (_, index) => index + 1).map((level) => (
           <Frame
             name={`Divider-L${level}`}
             key={`Divider-L${level}`}
             opacity={0.1}
             x={0}
-            y={(LEVEL_COUNT - level) * LEVEL_HEIGHT}
+            y={(levelCount - level) * LEVEL_HEIGHT}
             strokeWidth={0}
             overflow="visible"
             hidden={showLevels}
-            width={role == "Writing" ? 3806 : 3550}
+            width={dividerWidth}
             height={LEVEL_HEIGHT}
             onClick={() => {
               setUserLevel(level);
@@ -190,7 +251,7 @@ function Widget() {
             <SVG
               name={`Divider-L${level}-Line`}
               height={3}
-              width={role == "Writing" ? 3806 : 3550}
+              width={dividerWidth}
               src={DASHED_LINE_SVG}
             />
           </Frame>
@@ -199,7 +260,7 @@ function Widget() {
           name="Level-Label"
           y={{
             type: "top",
-            offset: CHART_HEIGHT + 10 - (userLevel * LEVEL_HEIGHT),
+            offset: chartHeight + 10 - (visibleUserLevel * LEVEL_HEIGHT),
           }}
           hidden={showLevels}
           fill="#A7A7A7"
@@ -209,17 +270,17 @@ function Widget() {
           letterSpacing={1.456}
           fontWeight={700}
         >
-          CURRENT LEVEL ({userLevel})
+          CURRENT LEVEL ({getLevelLabel(role, visibleUserLevel)})
         </Text>
         <SVG
           name="Divider-Line-Active"
           y={{
             type: "top",
-            offset: CHART_HEIGHT - (userLevel * LEVEL_HEIGHT),
+            offset: chartHeight - (visibleUserLevel * LEVEL_HEIGHT),
           }}
           hidden={showLevels}
           height={3}
-          width={role == "Writing" ? 3806 : 3550}
+          width={dividerWidth}
           src={ACTIVE_LINE_SVG}
         />
       </Frame>
@@ -241,15 +302,20 @@ function Widget() {
       {categories.map((category) => {
         // Draw Skill Rows
         return category.skills.map((skill, i) => {
+          const descriptionKey = category.descriptionKeys?.[i] || skill;
+          const stateKey = category.stateKey || category.name;
           return Skill(
             skill,
-            category.name,
+            descriptionKey,
             category.color,
             category.skillDescriptions[i],
-            `${category.name}-${skill}`,
+            `${stateKey}-${descriptionKey}`,
             role,
             showLevels,
-            voteMap
+            voteMap,
+            levelCount,
+            chartHeight,
+            skillFrameHeight
           );
         });
       })}
@@ -265,8 +331,8 @@ function Widget() {
           return Category(
             category.name,
             category.color,
-            role,
             `${category.name}`,
+            category.skills.length,
           );
         })}
       </AutoLayout>
@@ -278,19 +344,15 @@ function Widget() {
 function Category(
   name: string,
   color: string,
-  role: string,
-  category_key: string
+  category_key: string,
+  skillCount: number
 ) {
-  // console.log('Category: ',name);
-  // console.log('Role: ',role);
-  const hideCategory = (role == "Design" && name == "Writing") || (role == "Writing" && name == "Craft")
   return (
       <Text
       name={ `Category-${name}` }
       key={ `Category-${category_key}` }
-      hidden = { hideCategory ? true : false }
       fill= {color}
-      width={ name == "Writing" ? 1088 : 810 }
+      width={(skillCount * 250) + ((skillCount - 1) * 30)}
       height={50}
       verticalAlignText="center"
       horizontalAlignText="center"
@@ -308,26 +370,28 @@ function Category(
 
 function Skill(
   name: string,
-  category: string,
+  description_key: string,
   color: string,
   skill_description: string,
   skill_key: string, // "Strategy-Product",
-  role: string,
+  role: Role,
   showLevels: boolean,
-  voteMap: SyncedMap
+  voteMap: SyncedMap,
+  levelCount: number,
+  chartHeight: number,
+  skillFrameHeight: number
 ) {
-  const selectedLevel = voteMap.get(skill_key)
-  const offsetA = SKILL_FRAME_HEIGHT + 18 - ((selectedLevel || 1) * LEVEL_HEIGHT)
+  const storedLevel = voteMap.get(skill_key)
+  const selectedLevel = storedLevel ? Math.min(storedLevel, levelCount) : undefined
+  const offsetA = skillFrameHeight + 18 - ((selectedLevel || 1) * LEVEL_HEIGHT)
   const activeOpacity = 0.8
   const hoverOpacity = 0.4
-  const hideSkill = (role == "Design" && category == "Writing") || (role == "Writing" && category == "Craft")
   return (
     <Frame
       name={ `Skill-${name}` }
       key= { `Skill-${skill_key}` }
-      hidden= { hideSkill ? true : false }
       width={250}
-      height={SKILL_FRAME_HEIGHT}
+      height={skillFrameHeight}
     >
       <Rectangle
         name= { `Skill-Block-Bg-${name}` }
@@ -340,9 +404,9 @@ function Skill(
         fill={color}
         cornerRadius={6}
         width={250}
-        height={CHART_HEIGHT}
+        height={chartHeight}
       />
-      {Array.from({ length: LEVEL_COUNT }, (_, index) => LEVEL_COUNT - index).map((level) => (
+      {Array.from({ length: levelCount }, (_, index) => levelCount - index).map((level) => (
         <Rectangle
           name={`Skill-Block-${level}-${name}`}
           key={`Skill-Block-${level}-${skill_key}`}
@@ -357,7 +421,7 @@ function Skill(
           height={level * LEVEL_HEIGHT}
         />
       ))}
-      {Array.from({ length: LEVEL_COUNT }, (_, index) => LEVEL_COUNT - index).map((level) => (
+      {Array.from({ length: levelCount }, (_, index) => levelCount - index).map((level) => (
         <Rectangle
           name={`Skill-Hit-Area-${level}-${name}`}
           key={`Skill-Hit-Area-${level}-${skill_key}`}
@@ -377,7 +441,9 @@ function Skill(
           }}
           tooltip={
             levelDescriptions.find((description) => {
-              return description.skill === name && description.level === `${level}`;
+              return description.skill === description_key
+                && description.level === `${level}`
+                && description.role === (role === "Managers" ? "Managers" : undefined);
             })?.description || `${name} L${level}`
           }
         />
@@ -391,7 +457,7 @@ function Skill(
           type: "top",
           offset: offsetA,
         }}
-        fill= { (name == "Effectiveness" || name == "Leadership" || name == "Citizenship") ? "#876C14" : "#FFF" }
+        fill={color === "#FFCD29" ? "#876C14" : "#FFF"}
         width={250}
         height={38}
         horizontalAlignText="center"
@@ -401,7 +467,7 @@ function Skill(
         letterSpacing={-0.456}
         fontWeight={700}
       >
-        L{selectedLevel || 1}
+        {getLevelLabel(role, selectedLevel || 1)}
       </Text>
       <Text
         name= { `Skill-Label-${name}` }

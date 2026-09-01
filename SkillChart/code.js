@@ -480,6 +480,374 @@
       skill: "Citizenship",
       level: "6",
       description: "Citizenship L6\n\nYou're a global ambassador for Figma, attracting top talent and partnerships.\n\nYou create programs and platforms that elevate underrepresented voices in design.\n\nYou embody and evolve Figma's cultural values, ensuring design leadership remains inclusive, curious, and kind."
+    },
+    {
+      skill: "Influence & Decision Making",
+      level: "1",
+      description: "Influence & Decision Making M3\n\n\u{1F3AF} Your team trusts you as a subject matter expert of your domain.\n\n\u{1F3AF} You make clear, informed decisions about the day-to-day work of your team with minimal support.\n\n\u{1F3A8} You guide your team to balance user, business, and quality goals.",
+      role: "Managers"
+    },
+    {
+      skill: "Influence & Decision Making",
+      level: "2",
+      description: "Influence & Decision Making M4\n\n\u{1F3AF} Teams across the company consult with you as a subject matter expert in your domain.\n\n\u{1F3AF} You make decisions that affect the longer-term direction of your team(s), and incorporate input from your manager and stakeholders.\n\n\u{1F3A8} You influence adjacent teams through a strong user-centered perspective.",
+      role: "Managers"
+    },
+    {
+      skill: "Influence & Decision Making",
+      level: "3",
+      description: "Influence & Decision Making M5\n\n\u{1F3AF} People outside of Figma are starting to seek you out for advice, mentorship, and/or functional expertise.\n\n\u{1F3AF} You strategically identify areas where work/investment is not paying off and direct your teams to pivot accordingly.\n\n\u{1F3A8} You shape product strategy through design insights and cross-team collaboration.",
+      role: "Managers"
+    },
+    {
+      skill: "Influence & Decision Making",
+      level: "4",
+      description: "Influence & Decision Making M6\n\n\u{1F3AF} You work across the company to inspire Figmates to your vision, resolve ambiguity, and streamline execution for your organization.\n\n\u{1F3AF} You are developing in your thought leadership and can solve complex and ambiguous problems that impact the company's long-term success.",
+      role: "Managers"
+    },
+    {
+      skill: "Influence & Decision Making",
+      level: "5",
+      description: "Influence & Decision Making E1\n\n\u{1F3AF} You actively influence other executives and represent the organization on matters of great significance.\n\n\u{1F3AF} You are broadly recognized as a thought leader both internally and externally.\n\n\u{1F3A8} You shape company-wide strategy grounded in customer and design excellence.",
+      role: "Managers"
+    },
+    {
+      skill: "Influence & Decision Making",
+      level: "6",
+      description: "Influence & Decision Making E2\n\nTBD",
+      role: "Managers"
+    },
+    {
+      skill: "Achieve Business Results",
+      level: "1",
+      description: "Achieve Business Results M3\n\n\u{1F3AF} You work with leaders in your organization to define and communicate team goals and metrics.\n\n\u{1F3AF} As a maker, you partner with leaders and ICs across the team to get the work done.\n\n\u{1F3AF} You act as an owner of your team's work, and use data to ensure that goals are being hit.",
+      role: "Managers"
+    },
+    {
+      skill: "Achieve Business Results",
+      level: "2",
+      description: "Achieve Business Results M4\n\n\u{1F3AF} You are able to show your's and your team's impact (directly or indirectly) as related to company-wide metrics & initiatives.\n\n\u{1F3AF} As a maker, you partner with leaders and ICs across the team to get the work done.\n\n\u{1F3A8} You lead design strategies that move company metrics and drive customer success.",
+      role: "Managers"
+    },
+    {
+      skill: "Achieve Business Results",
+      level: "3",
+      description: "Achieve Business Results M5\n\n\u{1F3AF} You are a key driver counted on for core business metrics.\n\n\u{1F3AF} As a maker and coach, you drive results directly as well as through other leaders and ICs.\n\n\u{1F3A8} You identify opportunities where design creates competitive or business advantage.",
+      role: "Managers"
+    },
+    {
+      skill: "Achieve Business Results",
+      level: "4",
+      description: "Achieve Business Results M6\n\n\u{1F3AF} You are a key driver for core business metrics.\n\n\u{1F3AF} As a maker and coach, you drive results directly as well as through other leaders and ICs.\n\n\u{1F3A8} You lead large design initiatives that significantly impact company results.\n\n\u{1F3A8} You assist with Sales motions (customer workshops, media briefings, etc.) to help Figma close deals.",
+      role: "Managers"
+    },
+    {
+      skill: "Achieve Business Results",
+      level: "5",
+      description: "Achieve Business Results E1\n\n\u{1F3AF} You are accountable for key business outcomes. You define success metrics at scale and ensure the leaders on your team are aligned, and delivering.\n\n\u{1F3AF} As a maker, you partner with leaders and ICs across the team to get the work done.\n\n\u{1F3A8} You champion design, internally and externally, as a core lever for innovation and long-term business performance.",
+      role: "Managers"
+    },
+    {
+      skill: "Achieve Business Results",
+      level: "6",
+      description: "Achieve Business Results E2\n\nTBD",
+      role: "Managers"
+    },
+    {
+      skill: "Collaboration",
+      level: "1",
+      description: "Collaboration M3\n\n\u{1F3AF} You build relationships and proactive communication channels with your reports and cross-functional partners.\n\n\u{1F3AF} With support, you navigate ambiguity and conflict within the team and between teams to drive bigger outcomes.\n\n\u{1F3A8} You foster open, inclusive design rituals that connect design, product, and engineering and encourage constructive critique.",
+      role: "Managers"
+    },
+    {
+      skill: "Collaboration",
+      level: "2",
+      description: "Collaboration M4\n\n\u{1F3AF} You influence cross-functional groups as a trusted partner, and execute effectively against the team's plans and goals.\n\n\u{1F3AF} You proactively surface and confront conflict, addressing directly and coming to the best outcome holistically, not just for your team.\n\n\u{1F3A8} You lead design collaborations (vision sprints, crits, etc.) that align teams around shared outcomes.",
+      role: "Managers"
+    },
+    {
+      skill: "Collaboration",
+      level: "3",
+      description: "Collaboration M5\n\n\u{1F3AF} You navigate complex cross-team dependencies and relationships.\n\n\u{1F3AF} You often manage/guide others who have more domain expertise than you.\n\n\u{1F3AF} You are able to hold contradicting views at once, remove personal bias and navigate outcomes to be in the best interest of Figma.",
+      role: "Managers"
+    },
+    {
+      skill: "Collaboration",
+      level: "4",
+      description: "Collaboration M6\n\n\u{1F3AF} You create and leverage relationships with senior leaders throughout the org to drive collaboration cross-functionally.\n\n\u{1F3AF} You are able to objectively weigh pros and cons of significant conflict and navigate with diplomacy.\n\n\u{1F3A8} You champion collaboration models that position design as a strategic partner in company direction.",
+      role: "Managers"
+    },
+    {
+      skill: "Collaboration",
+      level: "5",
+      description: `Collaboration E1
+
+\u{1F3AF} You influence internal and external partners globally to champion the company's strategy and mission.
+
+\u{1F3AF} You serve as "deputies" for the C-level executives.
+
+\u{1F3AF} You solve complex cross-functional conflicts or problems that impact the company, in partnership with executive leadership.
+
+\u{1F3A8} You model executive partnership and inclusive leadership that positions design as a driver of innovation.`,
+      role: "Managers"
+    },
+    {
+      skill: "Collaboration",
+      level: "6",
+      description: "Collaboration E2\n\nTBD",
+      role: "Managers"
+    },
+    {
+      skill: "Communication",
+      level: "1",
+      description: "Communication M3\n\n\u{1F3AF} You actively share your team's work with others\n\n\u{1F3AF} With support, you connect the work completed by your team to your broader team.\n\n\u{1F3AF} You are developing your ability to translate and present ideas and plans.\n\n\u{1F3A8} You use storytelling, visuals, and prototypes to clarify design intent, align partners, and drive decisions.",
+      role: "Managers"
+    },
+    {
+      skill: "Communication",
+      level: "2",
+      description: "Communication M4\n\n\u{1F3AF} You proactively present to and interface with senior leaders across teams/departments representing the work of your team.\n\n\u{1F3AF} You actively adjust your communication style with different types of people and situations, communicating with empathy, directly and clearly.\n\n\u{1F3AF} With support, you gain buy-in for your ideas through concise, compelling asks and storytelling.\n\n\u{1F3A8} You coach designers to tailor messages to audience needs, connecting user insights to business goals.",
+      role: "Managers"
+    },
+    {
+      skill: "Communication",
+      level: "3",
+      description: "Communication M5\n\n\u{1F3AF} You often advise on decisions outside of your core area and model clear, empathetic and direct communication for your team and department.\n\n\u{1F3AF} You give credit to the work of others, whenever appropriate, and speaking to the collective efforts of team.\n\n\u{1F3A8} You elevate the storytelling quality of design presentations, critiques, and leadership updates.\n\n\u{1F3A8} You guide senior designers and managers to express design impact in a way that inspires confidence and alignment.",
+      role: "Managers"
+    },
+    {
+      skill: "Communication",
+      level: "4",
+      description: "Communication M6\n\n\u{1F3AF} You inspire your team with visionary communication, providing purpose and anchoring to the bigger picture.\n\n\u{1F3AF} You proactively share and coach others to share perspectives cross-functionally.\n\n\u{1F3AF} You are often presenting at org or company-wide meetings, and need little help in conveying ideas/perspectives\n\n\u{1F3A8} You represent design's vision and priorities in executive and company-wide forums, as well as external events.",
+      role: "Managers"
+    },
+    {
+      skill: "Communication",
+      level: "5",
+      description: "Communication E1\n\n\u{1F3AF} You are a senior company spokesperson, both internally and externally.\n\n\u{1F3AF} You proactively communicate perspectives across the company, including those that may be unpopular opinion, and coach others to do the same.\n\n\u{1F3A8} You represent Figma's design vision publicly, shaping the industry's understanding of design leadership.",
+      role: "Managers"
+    },
+    {
+      skill: "Communication",
+      level: "6",
+      description: "Communication E2\n\nTBD",
+      role: "Managers"
+    },
+    {
+      skill: "Talent",
+      level: "1",
+      description: "Talent M3\n\n\u{1F3AF} You are actively involved in your team's hiring processes, including creation of job descriptions and interview panels, partnering with recruiters and interviewers as needed.\n\n\u{1F3AF} You focus on hiring by reviewing resumes, encouraging referrals, posting on LinkedIn, and reaching out to your network.\n\n\u{1F3A8} You proactively build your talent pipeline, evaluating design portfolios to understand craft and potential.",
+      role: "Managers"
+    },
+    {
+      skill: "Talent",
+      level: "2",
+      description: "Talent M4\n\n\u{1F3AF} You are accountable for your team's hiring goals.\n\n\u{1F3AF} You model effective hiring manager practices and disrupt biases you observe through the hiring and selection process.\n\n\u{1F3AF} With support, you create effective org designs, which consider the long term balance of your team and representation across your team on all variables (background, skillsets, etc).\n\n\u{1F3A8} You coach designers to participate effectively in hiring and improve how your team reviews portfolios and conducts design crit interviews.",
+      role: "Managers"
+    },
+    {
+      skill: "Talent",
+      level: "3",
+      description: "Talent M5\n\n\u{1F3AF} You have a track record of hiring exceptional talent and help close strong candidates across functions.\n\n\u{1F3AF} You plan how your org will scale over the next year and coach managers on org design and inclusive hiring.\n\n\u{1F3A8} You identify gaps in design craft, systems thinking, or leadership, and shape hiring strategies to address them.\n\n\u{1F3A8} You leverage and scale your network to source top design talent for Figma's design team.",
+      role: "Managers"
+    },
+    {
+      skill: "Talent",
+      level: "4",
+      description: "Talent M6\n\n\u{1F3AF} You build the optimal structure for your organization 2+ years out, and influence org design and/or hiring decisions with partner teams\n\n\u{1F3AF} You use data to hold your leadership team accountable to hiring exceptional candidates\n\n\u{1F3AF} You actively champion BEI within hiring searches across the org.\n\n\u{1F3AF} You play an active role in hiring key leadership roles across Figma.\n\n\u{1F3A8} You define the bar for design craft and leadership in hiring at scale, ensuring clear and consistent evaluation.",
+      role: "Managers"
+    },
+    {
+      skill: "Talent",
+      level: "5",
+      description: "Talent E1\n\n\u{1F3AF} You are skilled at understanding the levels and skills that will be needed to grow your org 3+ years into the future.\n\n\u{1F3AF} You strategically give advice to leaders throughout the organization on how to build representative and efficient teams.\n\n\u{1F3AF} You hire senior leaders who build functions.\n\n\u{1F3A8} You set the vision for design hiring quality and help shape how design leadership is evaluated at Figma.\n\n\u{1F3A8} You elevate Figma's external presence to attract top design talent through thought leadership and strong interviewing culture.",
+      role: "Managers"
+    },
+    {
+      skill: "Talent",
+      level: "6",
+      description: "Talent E2\n\nTBD",
+      role: "Managers"
+    },
+    {
+      skill: "Culture",
+      level: "1",
+      description: "Culture M3\n\n\u{1F3AF} You are infusing play in your team activities\n\n\u{1F3AF} You are prioritizing psychological safety and inclusive practices on your team to ensure that everyone feels recognized, appreciated, and comfortable speaking up.\n\n\u{1F3A8} You reinforce design values by encouraging curiosity, openness in crit, and appreciation for thoughtful craft.\n\n\u{1F3A8} You shape team rituals that encourage learning, connection, and alignment across design and XFN partners.",
+      role: "Managers"
+    },
+    {
+      skill: "Culture",
+      level: "2",
+      description: "Culture M4\n\n\u{1F3AF} You have a strong pulse on and strategy around the engagement and retention of your teams.\n\n\u{1F3AF} You are regularly refining your org strategy, with support from your People Partner, through insights learned from culture and pulse surveys.\n\n\u{1F3AF} You coach your team on how to create inclusion and psychological safety on their teams. You give constructive, meaningful feedback to others when you see bias, disrupt your own bias, and invite others to hold you accountable.",
+      role: "Managers"
+    },
+    {
+      skill: "Culture",
+      level: "3",
+      description: "Culture M5\n\n\u{1F3AF} You build inclusive practices and anti-bias throughout your org, and model continuous learning and openness to feedback.\n\n\u{1F3A8} You promote shared standards for craft and a culture of thoughtful iteration.\n\n\u{1F3A8} You champion a design culture that values quality, critique, and system-level thinking across the entire product area.",
+      role: "Managers"
+    },
+    {
+      skill: "Culture",
+      level: "4",
+      description: "Culture M6\n\n\u{1F3AF} You set a cultural standard for your organization, and work with your leadership team to do the same.\n\n\u{1F3AF} You optimize team operating principles, engagement, effectiveness, and employee experience.\n\n\u{1F3AF} You scale inclusive practices and anti-bias throughout all levels of your org (e.g., You keep a close pulse on high potential talent within the organization in an effort to pursue appropriate sponsorship).\n\n\u{1F3A8} You influence XFN leaders to understand and support the cultural needs of a high-performing design org.",
+      role: "Managers"
+    },
+    {
+      skill: "Culture",
+      level: "5",
+      description: "Culture E1\n\n\u{1F3AF} You and your team are cultural role models for the rest of the company.\n\n\u{1F3AF} You motivate and energize the team to rally around the department and company goals.\n\n\u{1F3AF} You are accountable for fostering a company-wide culture of inclusive practices.\n\n\u{1F3A8} You shape the culture of design at Figma, helping the company understand the impact of great design.\n\n\u{1F3A8} You amplify the design team's presence externally, positioning Figma as a great place to work at as a designer.",
+      role: "Managers"
+    },
+    {
+      skill: "Culture",
+      level: "6",
+      description: "Culture E2\n\nTBD",
+      role: "Managers"
+    },
+    {
+      skill: "Coaching",
+      level: "1",
+      description: "Coaching M3\n\n\u{1F3AF} You are communicating job/role expectations with your direct reports\n\n\u{1F3AF} You are having quarterly development conversations with each of your direct reports to support their career journey, and are consistently seeking feedback about your directs from peers & stakeholders\n\n\u{1F3AF} You are mediating conflict as it arises within your direct team\n\n\u{1F3AF} You are proactively looping in your people & employee relations partners to support with any people issues within your team\n\n\u{1F3A8} You help designers build confidence by guiding them through decisions, feedback, and early ambiguity.",
+      role: "Managers"
+    },
+    {
+      skill: "Coaching",
+      level: "2",
+      description: "Coaching M4\n\n\u{1F3AF} You hold your directs accountable for managing performance.\n\n\u{1F3AF} You navigate difficult conversations with others that both get the message across but also strengthen rapport.\n\n\u{1F3AF} You foster and support development plans to help your team (both directs & skips) reach their potential and career aspirations.\n\n\u{1F3AF} You offer mentorship and coaching to people who do not directly report to you, both formally and informally.\n\n\u{1F3A8} You support skill-building across design disciplines, helping individuals grow in craft, product thinking, and collaboration.",
+      role: "Managers"
+    },
+    {
+      skill: "Coaching",
+      level: "3",
+      description: "Coaching M5\n\n\u{1F3AF} You foster a high-performance and feedback-forward culture across the department through appropriate platforms (e.g., skip-level 1:1s)\n\n\u{1F3AF} You hold your teams accountable for their performance and results.\n\n\u{1F3AF} You actively mentor strong leaders and high-performing peers.\n\n\u{1F3AF} You collaborate with other leaders to ensure individuals across the department are well-leveraged and continuously growing.\n\n\u{1F3A8} You help managers coach their teams through complex UX and product challenges with clarity and confidence.",
+      role: "Managers"
+    },
+    {
+      skill: "Coaching",
+      level: "4",
+      description: 'Coaching M6\n\n\u{1F3AF} You are coaching other managers on your team and across the company, advising them on management best practices.\n\n\u{1F3AF} You are a skilled and proactive partner at spotting "smoke before the fire" when it comes to potential people issues.\n\n\u{1F3A8} You enable your design leaders to operate effectively without you always being involved.\n\n\u{1F3A8} You push your team to engage in external design leadership opportunities (conferences, writing, etc.)',
+      role: "Managers"
+    },
+    {
+      skill: "Coaching",
+      level: "5",
+      description: "Coaching E1\n\n\u{1F3AF} You are enabling coaching and performance growth for your org at scale.\n\n\u{1F3AF} You are often coaching high level leaders and presenting to others on growth and development.\n\n\u{1F3AF} You are exemplifying company-wide standards on coaching, learning and development.\n\n\u{1F3A8} You define the philosophy of design leadership at Figma and coach leaders on modeling our values in feedback, quality, and growth.\n\n\u{1F3A8} You represent design leadership standards internally and externally, shaping how Figma grows great design leaders.",
+      role: "Managers"
+    },
+    {
+      skill: "Coaching",
+      level: "6",
+      description: "Coaching E2\n\nTBD",
+      role: "Managers"
+    },
+    {
+      skill: "Design Quality",
+      level: "1",
+      description: "Design Quality M3\n\n\u{1F3A8} You give clear, actionable craft feedback.\n\n\u{1F3A8} You step in as a maker when needed to demonstrate expectations or unblock work.\n\n\u{1F3A8} You ensure work is accurate, on brand, and aligned with guidelines.\n\n\u{1F3A8} You maintain a steady critique cadence for your team.",
+      role: "Managers"
+    },
+    {
+      skill: "Design Quality",
+      level: "2",
+      description: "Design Quality M4\n\n\u{1F3A8} You set and uphold a consistent quality bar across multiple teams.\n\n\u{1F3A8} You coach designers to identify quality gaps and articulate rationale.\n\n\u{1F3A8} You are recognized cross-functionally as a strong evaluator of design quality.",
+      role: "Managers"
+    },
+    {
+      skill: "Design Quality",
+      level: "3",
+      description: "Design Quality M5\n\n\u{1F3A8} You push the craft vision quality bar for your pillar.\n\n\u{1F3A8} You help evolve org-wide quality mechanisms including frameworks, principles, and design reviews.\n\n\u{1F3A8} You ensure your pillar's design output takes platform-level considerations into account, pushing for cross-pillar collaboration as necessary.",
+      role: "Managers"
+    },
+    {
+      skill: "Design Quality",
+      level: "4",
+      description: "Design Quality M6\n\n\u{1F3A8} You set craft direction across multiple surface areas and time horizons.\n\n\u{1F3A8} You raise leadership-level craft taste by coaching managers, senior ICs, and XFN leaders on 'what great looks like'.\n\n\u{1F3A8} You connect craft decisions to long-term product and business strategy.",
+      role: "Managers"
+    },
+    {
+      skill: "Design Quality",
+      level: "5",
+      description: "Design Quality E1\n\n\u{1F3A8} You define Figma-wide craft excellence standards.\n\n\u{1F3A8} You represent world-class design quality externally.\n\n\u{1F3A8} You ensure multi-product output is coherent across Figma's entire platform.\n\n\u{1F3A8} You create an environment where craft thrives across the organization.",
+      role: "Managers"
+    },
+    {
+      skill: "Design Quality",
+      level: "6",
+      description: "Design Quality E2\n\nTBD",
+      role: "Managers"
+    },
+    {
+      skill: "Systems & Process",
+      level: "1",
+      description: "Systems & Process M3\n\n\u{1F3A8} You establish and run core team rituals such as crits, reviews, and async sharing.\n\n\u{1F3A8} You ensure strong PM and engineering collaboration and shared clarity on requirements.\n\n\u{1F3A8} You coach ICs on healthy process habits, documentation, and workflows.\n\n\u{1F3A8} You begin improving team-level systems and standards.",
+      role: "Managers"
+    },
+    {
+      skill: "Systems & Process",
+      level: "2",
+      description: "Systems & Process M4\n\n\u{1F3A8} You anticipate dependencies and align cross-team decisions.\n\n\u{1F3A8} You guide teams on prototyping, research, and validation approaches.\n\n\u{1F3A8} You influence partners on how design should operate within the product development process.",
+      role: "Managers"
+    },
+    {
+      skill: "Systems & Process",
+      level: "3",
+      description: "Systems & Process M5\n\n\u{1F3A8} You build multi-team systems that reduce ambiguity and execution friction.\n\n\u{1F3A8} You drive cross-pillar alignment on workflow and quality gates to achieve multi-product consistency.\n\n\u{1F3A8} You partner with DesignOps, Research, Data, Design Systems, and PM leadership to shape org-wide practices.",
+      role: "Managers"
+    },
+    {
+      skill: "Systems & Process",
+      level: "4",
+      description: "Systems & Process M6\n\n\u{1F3A8} You shape long-term operational models for design at scale.\n\n\u{1F3A8} You lead major systems-level initiatives, such as complex cross-platform patterns.\n\n\u{1F3A8} You ensure design, research, writing, and systems teams operate cohesively.",
+      role: "Managers"
+    },
+    {
+      skill: "Systems & Process",
+      level: "5",
+      description: "Systems & Process E1\n\n\u{1F3A8} You define the enterprise operating model for design.\n\n\u{1F3A8} You enable high-leverage design operations across staffing, frameworks, and cross-org systems.\n\n\u{1F3A8} You elevate design's role in company-wide planning and execution.",
+      role: "Managers"
+    },
+    {
+      skill: "Systems & Process",
+      level: "6",
+      description: "Systems & Process E2\n\nTBD",
+      role: "Managers"
+    },
+    {
+      skill: "Strategy & Vision",
+      level: "1",
+      description: "Strategy & Vision M3\n\n\u{1F3A8} You help ICs clarify goals, constraints, and user needs, knowing when deeper research is needed.\n\n\u{1F3A8} You facilitate early problem-framing activities and hypothesis development.\n\n\u{1F3A8} You escalate upstream strategy issues when they impact team direction.",
+      role: "Managers"
+    },
+    {
+      skill: "Strategy & Vision",
+      level: "2",
+      description: "Strategy & Vision M4\n\n\u{1F3A8} You own vision for a functional area or surface, driving new strategic explorations.\n\n\u{1F3A8} You coach teams to handle ambiguity and define impactful requirements.\n\n\u{1F3A8} You align partners on shared direction and evaluate competing paths.",
+      role: "Managers"
+    },
+    {
+      skill: "Strategy & Vision",
+      level: "3",
+      description: "Strategy & Vision M5\n\n\u{1F3A8} You lead major vision initiatives that influence pillar-level roadmaps.\n\n\u{1F3A8} You anticipate future opportunities through research, customer signals, and industry insight.\n\n\u{1F3A8} You align multiple teams around a coherent strategic narrative.",
+      role: "Managers"
+    },
+    {
+      skill: "Strategy & Vision",
+      level: "4",
+      description: "Strategy & Vision M6\n\n\u{1F3A8} You shape multi-year product strategy for broad surfaces or cross-product experiences.\n\n\u{1F3A8} You connect design strategy to market direction, and speak on behalf of Figma's product vision externally as appropriate (conferences, speaking engagements, etc.)\n\n\u{1F3A8} You lead high-ambiguity explorations and identify major strategic bets, helping to shape company-level narrative.",
+      role: "Managers"
+    },
+    {
+      skill: "Strategy & Vision",
+      level: "5",
+      description: "Strategy & Vision E1\n\n\u{1F3A8} You define company-wide strategic design vision with executive peers.\n\n\u{1F3A8} You spot long-range industry shifts and position Figma ahead of them.\n\n\u{1F3A8} You ensure design strategy is integrated into planning and messaging across the organization.",
+      role: "Managers"
+    },
+    {
+      skill: "Strategy & Vision",
+      level: "6",
+      description: "Strategy & Vision E2\n\nTBD",
+      role: "Managers"
     }
   ];
 
@@ -495,17 +863,18 @@
     Text,
     SVG
   } = widget;
-  var LEVEL_COUNT = 6;
+  var INDIVIDUAL_LEVEL_COUNT = 6;
+  var MANAGEMENT_LEVEL_COUNT = 5;
   var LEVEL_HEIGHT = 130;
-  var CHART_HEIGHT = LEVEL_COUNT * LEVEL_HEIGHT;
-  var SKILL_FRAME_HEIGHT = CHART_HEIGHT + 66;
-  var WIDGET_HEIGHT = 1100 + LEVEL_HEIGHT;
+  var SKILL_FRAME_OVERHEAD = 66;
+  var WIDGET_VERTICAL_OVERHEAD = 450;
   var DASHED_LINE_SVG = `<svg width="3481" height="4" viewBox="0 0 3481 4" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M0 2H3481" stroke="black" stroke-width="3" stroke-dasharray="8 8" />
 </svg>`;
   var ACTIVE_LINE_SVG = `<svg width="3481" height="4" viewBox="0 0 3481 4" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M0 2H3481" stroke="black" stroke-opacity="0.33" stroke-width="3" />
 </svg>`;
+  var MANAGER_LEVEL_LABELS = ["M3", "M4", "M5", "M6", "E1"];
   var strategyCategory = {
     name: "Strategy",
     color: "#9747FF",
@@ -536,13 +905,65 @@
     skills: ["Effectiveness", "Leadership", "Citizenship"],
     skillDescriptions: ["Output, follow-through, and business impact", "Mentorship, ability to influence and drive change", "Improving our culture, hiring, and company practices"]
   };
-  var categories = [strategyCategory, craftCategory, writingCraftCategory, collabCategory, impactCategory];
+  var managerStrategyCategory = {
+    name: "Strategy",
+    stateKey: "Strategy & Results",
+    color: "#9747FF",
+    skills: ["Influence", "Results"],
+    descriptionKeys: ["Influence & Decision Making", "Achieve Business Results"],
+    skillDescriptions: ["Making decisions with intention", "The results of your work on the business"]
+  };
+  var managerCollaborationCategory = {
+    name: "Collaboration",
+    stateKey: "Collaboration & Communication",
+    color: "#14AE5C",
+    skills: ["Collaboration", "Communication"],
+    skillDescriptions: ["How you work with others and affect change", "How and what you share with others"]
+  };
+  var managerPeopleCategory = {
+    name: "Management",
+    stateKey: "People & Team Management",
+    color: "#F24822",
+    skills: ["Talent", "Culture", "Coaching"],
+    skillDescriptions: ["Building your team", "How your team operates", "Behaviors and practices"]
+  };
+  var managerCraftCategory = {
+    name: "Craft",
+    color: "#0D99FF",
+    skills: ["Design Quality", "Systems", "Vision"],
+    descriptionKeys: ["Design Quality", "Systems & Process", "Strategy & Vision"],
+    skillDescriptions: [
+      "Guide quality through feedback, taste, direction, and hands-on craft.",
+      "Create, evolve, and scale processes that enable great design outcomes.",
+      "Define the right problems, turn ambiguity into clarity, and shape product vision."
+    ]
+  };
+  var roleCategories = {
+    Design: [strategyCategory, craftCategory, collabCategory, impactCategory],
+    Writing: [strategyCategory, writingCraftCategory, collabCategory, impactCategory],
+    Managers: [managerStrategyCategory, managerCraftCategory, managerCollaborationCategory, managerPeopleCategory]
+  };
+  function getLevelLabel(role, level) {
+    return role === "Managers" ? MANAGER_LEVEL_LABELS[level - 1] : `L${level}`;
+  }
   function Widget() {
     const voteMap = useSyncedMap("skill-level");
     const [userLevel, setUserLevel] = useSyncedState("level", 1);
     const [showLevels, setShowLevels] = useSyncedState("isShown", false);
     const [role, setRole] = useSyncedState("role", "Design");
-    const roleOptions = [{ option: "Design", label: "Design" }, { option: "Writing", label: "Writing" }];
+    const roleOptions = [
+      { option: "Design", label: "Design" },
+      { option: "Writing", label: "Writing" },
+      { option: "Managers", label: "Manager" }
+    ];
+    const categories = roleCategories[role];
+    const widgetWidth = role === "Writing" ? 3990 : role === "Managers" ? 3190 : 3750;
+    const dividerWidth = role === "Writing" ? 3806 : role === "Managers" ? 2990 : 3550;
+    const levelCount = role === "Managers" ? MANAGEMENT_LEVEL_COUNT : INDIVIDUAL_LEVEL_COUNT;
+    const chartHeight = levelCount * LEVEL_HEIGHT;
+    const skillFrameHeight = chartHeight + SKILL_FRAME_OVERHEAD;
+    const widgetHeight = chartHeight + WIDGET_VERTICAL_OVERHEAD;
+    const visibleUserLevel = Math.min(userLevel, levelCount);
     usePropertyMenu([
       {
         itemType: "dropdown",
@@ -568,8 +989,8 @@
     });
     return /* @__PURE__ */ figma.widget.h(Frame, {
       name: "Everything",
-      width: role == "Writing" ? 3990 : 3750,
-      height: WIDGET_HEIGHT,
+      width: widgetWidth,
+      height: widgetHeight,
       fill: "#FFFFFF",
       cornerRadius: 10,
       effect: [
@@ -620,18 +1041,18 @@
       name: "Dividers",
       x: 82,
       y: 228,
-      width: role == "Writing" ? 3806 : 3550,
-      height: CHART_HEIGHT
-    }, Array.from({ length: LEVEL_COUNT }, (_, index) => index + 1).map((level) => /* @__PURE__ */ figma.widget.h(Frame, {
+      width: dividerWidth,
+      height: chartHeight
+    }, Array.from({ length: levelCount }, (_, index) => index + 1).map((level) => /* @__PURE__ */ figma.widget.h(Frame, {
       name: `Divider-L${level}`,
       key: `Divider-L${level}`,
       opacity: 0.1,
       x: 0,
-      y: (LEVEL_COUNT - level) * LEVEL_HEIGHT,
+      y: (levelCount - level) * LEVEL_HEIGHT,
       strokeWidth: 0,
       overflow: "visible",
       hidden: showLevels,
-      width: role == "Writing" ? 3806 : 3550,
+      width: dividerWidth,
       height: LEVEL_HEIGHT,
       onClick: () => {
         setUserLevel(level);
@@ -648,13 +1069,13 @@
     }), /* @__PURE__ */ figma.widget.h(SVG, {
       name: `Divider-L${level}-Line`,
       height: 3,
-      width: role == "Writing" ? 3806 : 3550,
+      width: dividerWidth,
       src: DASHED_LINE_SVG
     }))), /* @__PURE__ */ figma.widget.h(Text, {
       name: "Level-Label",
       y: {
         type: "top",
-        offset: CHART_HEIGHT + 10 - userLevel * LEVEL_HEIGHT
+        offset: chartHeight + 10 - visibleUserLevel * LEVEL_HEIGHT
       },
       hidden: showLevels,
       fill: "#A7A7A7",
@@ -663,15 +1084,15 @@
       fontFamily: "Inter",
       letterSpacing: 1.456,
       fontWeight: 700
-    }, "CURRENT LEVEL (", userLevel, ")"), /* @__PURE__ */ figma.widget.h(SVG, {
+    }, "CURRENT LEVEL (", getLevelLabel(role, visibleUserLevel), ")"), /* @__PURE__ */ figma.widget.h(SVG, {
       name: "Divider-Line-Active",
       y: {
         type: "top",
-        offset: CHART_HEIGHT - userLevel * LEVEL_HEIGHT
+        offset: chartHeight - visibleUserLevel * LEVEL_HEIGHT
       },
       hidden: showLevels,
       height: 3,
-      width: role == "Writing" ? 3806 : 3550,
+      width: dividerWidth,
       src: ACTIVE_LINE_SVG
     })), /* @__PURE__ */ figma.widget.h(AutoLayout, {
       name: "Container",
@@ -688,24 +1109,25 @@
       spacing: 30
     }, categories.map((category) => {
       return category.skills.map((skill, i) => {
-        return Skill(skill, category.name, category.color, category.skillDescriptions[i], `${category.name}-${skill}`, role, showLevels, voteMap);
+        var _a;
+        const descriptionKey = ((_a = category.descriptionKeys) == null ? void 0 : _a[i]) || skill;
+        const stateKey = category.stateKey || category.name;
+        return Skill(skill, descriptionKey, category.color, category.skillDescriptions[i], `${stateKey}-${descriptionKey}`, role, showLevels, voteMap, levelCount, chartHeight, skillFrameHeight);
       });
     })), /* @__PURE__ */ figma.widget.h(AutoLayout, {
       name: "Categories",
       overflow: "visible",
       spacing: 30
     }, categories.map((category) => {
-      return Category(category.name, category.color, role, `${category.name}`);
+      return Category(category.name, category.color, `${category.name}`, category.skills.length);
     }))));
   }
-  function Category(name, color, role, category_key) {
-    const hideCategory = role == "Design" && name == "Writing" || role == "Writing" && name == "Craft";
+  function Category(name, color, category_key, skillCount) {
     return /* @__PURE__ */ figma.widget.h(Text, {
       name: `Category-${name}`,
       key: `Category-${category_key}`,
-      hidden: hideCategory ? true : false,
       fill: color,
-      width: name == "Writing" ? 1088 : 810,
+      width: skillCount * 250 + (skillCount - 1) * 30,
       height: 50,
       verticalAlignText: "center",
       horizontalAlignText: "center",
@@ -717,18 +1139,17 @@
       fontWeight: 700
     }, name);
   }
-  function Skill(name, category, color, skill_description, skill_key, role, showLevels, voteMap) {
-    const selectedLevel = voteMap.get(skill_key);
-    const offsetA = SKILL_FRAME_HEIGHT + 18 - (selectedLevel || 1) * LEVEL_HEIGHT;
+  function Skill(name, description_key, color, skill_description, skill_key, role, showLevels, voteMap, levelCount, chartHeight, skillFrameHeight) {
+    const storedLevel = voteMap.get(skill_key);
+    const selectedLevel = storedLevel ? Math.min(storedLevel, levelCount) : void 0;
+    const offsetA = skillFrameHeight + 18 - (selectedLevel || 1) * LEVEL_HEIGHT;
     const activeOpacity = 0.8;
     const hoverOpacity = 0.4;
-    const hideSkill = role == "Design" && category == "Writing" || role == "Writing" && category == "Craft";
     return /* @__PURE__ */ figma.widget.h(Frame, {
       name: `Skill-${name}`,
       key: `Skill-${skill_key}`,
-      hidden: hideSkill ? true : false,
       width: 250,
-      height: SKILL_FRAME_HEIGHT
+      height: skillFrameHeight
     }, /* @__PURE__ */ figma.widget.h(Rectangle, {
       name: `Skill-Block-Bg-${name}`,
       key: `Skill-Block-Bg-${skill_key}`,
@@ -740,8 +1161,8 @@
       fill: color,
       cornerRadius: 6,
       width: 250,
-      height: CHART_HEIGHT
-    }), Array.from({ length: LEVEL_COUNT }, (_, index) => LEVEL_COUNT - index).map((level) => /* @__PURE__ */ figma.widget.h(Rectangle, {
+      height: chartHeight
+    }), Array.from({ length: levelCount }, (_, index) => levelCount - index).map((level) => /* @__PURE__ */ figma.widget.h(Rectangle, {
       name: `Skill-Block-${level}-${name}`,
       key: `Skill-Block-${level}-${skill_key}`,
       opacity: selectedLevel === level ? activeOpacity : 0,
@@ -753,7 +1174,7 @@
       cornerRadius: 6,
       width: 250,
       height: level * LEVEL_HEIGHT
-    })), Array.from({ length: LEVEL_COUNT }, (_, index) => LEVEL_COUNT - index).map((level) => {
+    })), Array.from({ length: levelCount }, (_, index) => levelCount - index).map((level) => {
       var _a;
       return /* @__PURE__ */ figma.widget.h(Rectangle, {
         name: `Skill-Hit-Area-${level}-${name}`,
@@ -773,7 +1194,7 @@
           opacity: selectedLevel === level ? 0 : hoverOpacity
         },
         tooltip: ((_a = levelDescriptions.find((description) => {
-          return description.skill === name && description.level === `${level}`;
+          return description.skill === description_key && description.level === `${level}` && description.role === (role === "Managers" ? "Managers" : void 0);
         })) == null ? void 0 : _a.description) || `${name} L${level}`
       });
     }), /* @__PURE__ */ figma.widget.h(Text, {
@@ -785,7 +1206,7 @@
         type: "top",
         offset: offsetA
       },
-      fill: name == "Effectiveness" || name == "Leadership" || name == "Citizenship" ? "#876C14" : "#FFF",
+      fill: color === "#FFCD29" ? "#876C14" : "#FFF",
       width: 250,
       height: 38,
       horizontalAlignText: "center",
@@ -794,7 +1215,7 @@
       fontSize: 24,
       letterSpacing: -0.456,
       fontWeight: 700
-    }, "L", selectedLevel || 1), /* @__PURE__ */ figma.widget.h(Text, {
+    }, getLevelLabel(role, selectedLevel || 1)), /* @__PURE__ */ figma.widget.h(Text, {
       name: `Skill-Label-${name}`,
       key: `Skill-Label-${skill_key}`,
       fill: color,
