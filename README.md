@@ -41,7 +41,7 @@ Import `SkillChart/manifest.json` through Figma's development-widget workflow to
 
 ### Manifest ID and forks
 
-The checked-in manifest ID, `1207836110040407856`, belongs to the published Skills Chart widget linked above.
+The checked-in manifest ID belongs to the published Skills Chart widget linked above.
 
 - If you are contributing directly to this widget, keep the existing ID.
 - If you are forking the project or publishing your own version, create a new development widget in Figma and replace the manifest's `id` with the new ID Figma generates for you.
