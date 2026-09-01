@@ -1,0 +1,53 @@
+# Figma Design Career Framework
+
+This repository contains Figma's design career-ladder reference materials and the source for the **Skills Chart** FigJam widget. The widget turns the framework into an interactive chart that people can use for career conversations, self-assessment, and development planning.
+
+## Use the published widget
+
+The latest published version is available in the Figma Community:
+
+**[Open Skills Chart in Figma](https://www.figma.com/community/widget/1207836110040407856/skills-chart?fuid=203211554002657486)**
+
+The widget supports three tracks:
+
+- **Design:** six IC levels, L1–L6
+- **Writing:** six IC levels, L1–L6
+- **Manager:** five management levels, M3–E1
+
+Each skill includes level-specific criteria in its tooltip. Skill levels and the overall current-level marker can be set directly on the chart.
+
+## Repository structure
+
+- `Index.html` — static entry point for the original Product Design Ladder export
+- `Product Design Ladder…/` — static level and skills-chart reference pages
+- `SkillChart/` — FigJam widget source and publishing files
+  - `code.tsx` — widget layout, role switching, selection behavior, and styling
+  - `levelinfo.tsx` — Design, Writing, and Manager level descriptions
+  - `code.js` — compiled widget bundle loaded by Figma
+  - `levelinfo.js` — compiled standalone description data
+  - `manifest.json` — Figma widget manifest
+
+## Develop the widget locally
+
+Install dependencies and build the widget:
+
+```sh
+cd SkillChart
+npm install
+npm run build
+```
+
+Import `SkillChart/manifest.json` through Figma's development-widget workflow to test the local build in FigJam.
+
+When changing framework copy, edit `levelinfo.tsx`. To refresh the standalone compiled description file as well as the widget bundle, run:
+
+```sh
+npx esbuild levelinfo.tsx --format=esm --outfile=levelinfo.js
+npm run build
+```
+
+Commit the TypeScript sources and their compiled JavaScript outputs together so the repository always contains a publishable widget bundle.
+
+## Publishing notes
+
+The widget does not request external network access. Its manifest declares no allowed network domains and uses dynamic-page document access, as required by Figma's publishing checks.
